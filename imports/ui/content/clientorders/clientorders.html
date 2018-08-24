@@ -1,0 +1,30 @@
+<template name="ClientOrders">
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">接龙凭证</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            接龙凭证实时更新最新的50条,团长可以通过转发分享到微信群
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <ul class="demo-list-item mdl-list">
+                {{#each orders}}
+                    <li class="mdl-list__item mdl-list__item--two-line order-info">
+                        <span class="mdl-list__item-primary-content">
+                            <img src={{wechatUserImage}} class="mdl-list__item-avatar"/>
+                            <span>{{wechatUserName}}</span>
+                            <span class="mdl-list__item-sub-title">{{item_title}}</span>
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <span class="mdl-list__item-secondary-info">{{orderDate}}</span>
+                            <span class="mdl-list__item-secondary-action" href="#">+ {{num}}</span>
+                        </span>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+
+</template>

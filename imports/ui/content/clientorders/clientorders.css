@@ -1,0 +1,16 @@
+.order-info {
+    width: 100%;
+}
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+}
+
+.demo-card-wide > .mdl-card__title {
+    color: #000000;
+    height: 100px;
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #000000;
+}

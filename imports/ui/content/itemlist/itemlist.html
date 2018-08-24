@@ -1,0 +1,36 @@
+<template name="ItemList">
+    <h4>近一周拼团项目</h4>
+
+    {{#each items}}
+        <div class="row">
+            <div class="col s12 m7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src={{thumb}}>
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+    <!-- <div class="panel panel-warning"> 
+        <div class="panel-heading">正在开团的项目</div>
+        <ul class="list-group">
+            {{#each items}}
+            <li class="list-group-item">
+                <a href="/item-list/{{platform_id}}/{{_id}}?title={{title}}" class="list-group-item">
+                    <h4 class="list-group-item-heading">{{title}}</h4>
+                    <p class="list-group-item-text">起始时间: {{open_date}} - {{close_date}}</p>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div> -->
+</template>

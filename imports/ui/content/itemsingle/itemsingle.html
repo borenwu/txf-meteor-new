@@ -1,0 +1,51 @@
+<template name="ItemSingle">
+    <div class="demo-card-event mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+            <h4>
+                {{itemTitle}}<br>
+                物品当前库存: {{inventoryBalance}}<br>
+                订单总计: {{sum}}
+            </h4>
+
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            {{#each orders}}
+                <span class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    {{_id}}
+                </span>
+                <span class="mdl-badge" data-badge={{total}}></span>
+                <div class="mdl-layout-spacer"></div>
+
+            {{/each}}
+        </div>
+        <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect back-btn">
+                <i class="material-icons">arrow_back</i>
+            </button>
+        </div>
+    </div>
+
+    <!--<button type="button" class="btn btn-primary back-btn">-->
+    <!--<span class="glyphicon glyphicon-chevron-left"></span>返回-->
+    <!--</button>-->
+
+
+    <!--<div class="panel panel-warning info-panel">-->
+    <!--&lt;!&ndash; Default panel contents &ndash;&gt;-->
+    <!--<div class="panel-heading">{{itemTitle}} </div>-->
+    <!--<div class="panel-body">-->
+    <!--<p>物品当前库存: {{inventoryBalance}}</p>-->
+    <!--<p>订单总计: {{sum}}</p>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; List group &ndash;&gt;-->
+    <!--<ul class="list-group">-->
+        <!--{{#each orders}}-->
+    <!--<li class="list-group-item">-->
+    <!--<span class="badge">{{total}}</span>-->
+    <!--{{_id}}-->
+    <!--</li>-->
+        <!--{{/each}}-->
+    <!--</ul>-->
+    <!--</div>-->
+</template>
